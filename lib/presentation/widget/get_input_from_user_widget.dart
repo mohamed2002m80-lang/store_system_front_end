@@ -82,7 +82,6 @@ class GetInputFromUserWidget extends StatelessWidget {
           height: size.height,
           width: size.width,
         ).mainTextStyle.copyWith(color: Colors.grey, fontSize: fontSize),
-
         suffixIcon:
             suffixIcon ??
             Icon(
@@ -90,10 +89,8 @@ class GetInputFromUserWidget extends StatelessWidget {
               size: fontSize,
               color: isReadOnly ? Colors.grey : ConstantApp.primaryColor,
             ),
-
         filled: true,
         fillColor: isReadOnly ? Colors.grey.shade100 : Colors.white,
-
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(16),
           borderSide: BorderSide(color: Colors.grey.shade200),

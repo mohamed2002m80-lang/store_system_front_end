@@ -7,12 +7,12 @@ import '../presentation/view/auth/login_view.dart';
 class AppRoute {
   static GoRouter getRouter() {
     return GoRouter(
-      initialLocation: NamesRoute.home,
+      initialLocation: NamesRoute.login,
       routes: [
         GoRoute(
           path: NamesRoute.login,
           name: NamesRoute.login,
-          builder: (context, state) => const LoginView(),
+          builder: (context, state) =>  LoginPage(),
         ),
         GoRoute(
           path: NamesRoute.home,
