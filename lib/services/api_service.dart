@@ -16,7 +16,7 @@ class ApiService {
   Completer<void>? _refreshCompleter;
 
   ApiService({
-    String baseUrl = 'http://10.0.2.2:5085/api/',
+    String baseUrl = 'https://store-system-api-u5w5.onrender.com/api/',
     Map<String, String>? headers,
   }) : _dio = Dio(
          BaseOptions(

@@ -124,7 +124,7 @@ class _Sidebar extends StatelessWidget {
           Expanded(
             child: ListView.separated(
               itemCount: items.length,
-              separatorBuilder: (_, __) => const SizedBox(height: 8),
+              separatorBuilder: (_, _) => const SizedBox(height: 8),
               itemBuilder: (context, index) {
                 final item = items[index];
                 final isSelected = index == selectedIndex;
@@ -138,9 +138,7 @@ class _Sidebar extends StatelessWidget {
                       vertical: 12,
                     ),
                     decoration: BoxDecoration(
-                      color: isSelected
-                          ? Colors.white.withOpacity(0.18)
-                          : Colors.transparent,
+                      color: isSelected ? Colors.white : Colors.transparent,
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Row(
